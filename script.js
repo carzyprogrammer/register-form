@@ -29,7 +29,7 @@ submit.addEventListener('click',(event) => {
         success(copassword)
         
     }else{
-        error(password,"DOES NOT MATCH")
+        success(password,"DOES NOT MATCH")
     }
 });
 

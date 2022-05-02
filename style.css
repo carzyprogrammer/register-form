@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.form{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.tittle{
+    margin-bottom: 20px;
+
+}
+.inputs{
+    margin: 20px 0;
+}
+.inputs label{
+    display:inline-block;
+    margin-bottom: 10px;
+}
+.inputs input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+
+}
+.inputs p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+
+
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: greenyellow;
+}
+h2{
+    text-align: center;
+}

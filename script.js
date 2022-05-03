@@ -1,6 +1,8 @@
 const username=document.querySelector('#username');
 const password=document.querySelector('#password');
+const copassword=document.querySelector('#copassword')
 const submit=document.querySelector('#submit');
+
 
 
 submit.addEventListener('click',(event) => {
@@ -25,12 +27,7 @@ submit.addEventListener('click',(event) => {
     }else{
         success(copassword);
     }
-    if (password==copassword){
-        success(copassword)
-        
-    }else{
-        success(password,"DOES NOT MATCH")
-    }
+    
 });
 
 
@@ -47,5 +44,19 @@ function success(element){
     const p =parent.querySelector('p')
     
     p.style.visibility='hidden';
+
+}
+document.getElementById("submit").onclick=function(){
+    var pass =document.getElementById("password").value;
+    var copass=document.getElementById("copassword").value;
+    console.log(pass);
+    console.log(copass);
+    if (pass==copass){
+        success(copassword);
+        
+    }else{
+        error(copassword,'NOT MATCH');
+
+    }
 
 }
